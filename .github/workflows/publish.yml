@@ -8,6 +8,7 @@ on:
 
 env:
   PLUGIN_NAME: logseq-github-plugin
+  GITHUBAUTHENTICATIONTOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
@@ -33,7 +34,6 @@ jobs:
         uses: ncipollo/release-action@v1
         id: create_release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ github.ref }}
         with:
           allowUpdates: true
