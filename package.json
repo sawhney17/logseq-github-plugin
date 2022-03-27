@@ -1,7 +1,7 @@
 {
-  "name": "logseq-starter-plugin",
+  "name": "logseq-github-plugin",
   "version": "1.0",
-  "description": "Starter Plugin",
+  "description": "Github Plugin",
   "main": "dist/index.html",
   "targets": {
     "main": false
@@ -14,14 +14,16 @@
   "author": "Aryan Sawhney",
   "license": "MIT",
   "dependencies": {
-    "@logseq/libs": "0.0.1-alpha.34"
+    "@logseq/libs": "0.0.1-alpha.35",
+    "octokit": "^1.7.1"
   },
   "logseq": {
-    "id": "logseq-starter-plugin",
-    "title": "logseq-starter-plugin",
+    "id": "logseq-github-plugin",
+    "title": "logseq-github-plugin",
     "icon": "./icon.png"
   },
   "devDependencies": {
+    "buffer": "^6.0.3",
     "parcel": "^2.0.0"
   }
 }
