@@ -3,6 +3,7 @@ import { SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin.user';
 // import 'octokit'
 import { Octokit, App } from 'octokit'
 let githubToken = process.env.GITHUBAUTHENTICATIONTOKEN
+console.log(githubToken)
 const octokit = new Octokit({ auth: `${githubToken}` });
 //Inputs 5 numbered blocks when called
 
@@ -10,6 +11,13 @@ var blockArray
 
 const pageName = "Github"
 let settings: SettingSchemaDesc[] = [
+  {
+    key: "API Key",
+    type: "string",
+    title: "Enter github personal access token",
+    description: "Enter your personal access token here",
+    default: "user:sawhney17"
+  },
   {
     key: "SearchQuery",
     type: "string",
