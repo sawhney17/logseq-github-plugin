@@ -1,6 +1,6 @@
 {
   "name": "logseq-github-plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Github Plugin",
   "main": "dist/index.html",
   "targets": {
