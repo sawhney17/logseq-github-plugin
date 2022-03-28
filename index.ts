@@ -3,7 +3,6 @@ import { SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin.user';
 // import 'octokit'
 import { Octokit, App } from 'octokit'
 let githubToken = process.env.GITHUBAUTHENTICATIONTOKEN
-console.log(githubToken)
 const octokit = new Octokit({ auth: `${githubToken}` });
 //Inputs 5 numbered blocks when called
 
