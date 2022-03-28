@@ -22,7 +22,7 @@ jobs:
       - name: Build
         id: build
         env:
-          GITHUBAUTHENTICATIONTOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUBAUTHENTICATIONTOKEN: ${{ secrets.GITHUBAUTHENTICATIONTOKEN }}
         run: |
           npm i && npm run build
           mkdir ${{ env.PLUGIN_NAME }}
